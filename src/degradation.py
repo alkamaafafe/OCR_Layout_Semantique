@@ -1,364 +1,177 @@
 """
-src/degradation.py
+degradation.py
+--------------------------------
+Phase 2 : Construction d'un benchmark de dégradation documentaire.
 
-Module de génération de versions artificiellement dégradées de documents
-scannés, pour le benchmark de robustesse (Phase 2 du PFA).
+Fournit une fonction de dégradation paramétrable, capable de simuler :
+- flou gaussien
+- bruit aléatoire (gaussien / sel & poivre)
+- rotation légère
+- faible contraste
+- compression JPEG
+- effet "scan dégradé" (bruit + contraste + légère binarisation)
+- décalage / distorsion légère
+- ombres / zones assombries
 
-8 types de dégradation, chacun paramétrable sur 3 niveaux de difficulté :
-    - faible
-    - moyen
-    - fort
-
-Chaque fonction :
-    - prend une image PIL.Image (RGB) en entrée
-    - retourne (image_degradee: PIL.Image, params_utilises: dict)
-
-Une fonction générique `apply_degradation(image, degradation_type, level, seed)`
-permet d'appeler n'importe quelle dégradation par son nom.
-
-Une fonction `generate_degraded_dataset(...)` applique toutes les dégradations
-à tous les niveaux sur un dataset entier (ex: FUNSD) et sauvegarde :
-    - les images dégradées (.png)
-    - un manifest JSON listant, pour chaque image générée, le document
-      d'origine, le type de dégradation, le niveau et les paramètres exacts.
-
-Auteur : Oumaima - PFA Document AI (encadrant : Pr. Hafidi Imad)
+Chaque dégradation est paramétrable et les transformations appliquées
+sont journalisées pour la reproductibilité.
 """
-
-from __future__ import annotations
 
 import io
 import json
 import random
 from pathlib import Path
-from typing import Callable, Dict, List, Tuple
 
 import cv2
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image
 
+random.seed(42)
+np.random.seed(42)
 
-# ---------------------------------------------------------------------------
-# Utilitaires de conversion PIL <-> OpenCV
-# ---------------------------------------------------------------------------
-
-def pil_to_cv(img: Image.Image) -> np.ndarray:
-    """Convertit une image PIL (RGB) en tableau OpenCV (BGR)."""
-    arr = np.array(img.convert("RGB"))
-    return cv2.cvtColor(arr, cv2.COLOR_RGB2BGR)
-
-
-def cv_to_pil(arr: np.ndarray) -> Image.Image:
-    """Convertit un tableau OpenCV (BGR) en image PIL (RGB)."""
-    rgb = cv2.cvtColor(arr, cv2.COLOR_BGR2RGB)
-    return Image.fromarray(rgb)
-
-
-def _set_seed(seed: int | None):
-    if seed is not None:
-        random.seed(seed)
-        np.random.seed(seed)
-
-
-# ---------------------------------------------------------------------------
-# Grille de paramètres par niveau de difficulté
-# ---------------------------------------------------------------------------
-# Chaque dégradation a 3 jeux de paramètres (faible / moyen / fort).
-# Ces valeurs sont volontairement documentées ici pour que le rapport
-# puisse justifier chaque choix.
-
-LEVELS = ["faible", "moyen", "fort"]
-
-PARAM_GRID: Dict[str, Dict[str, dict]] = {
-    "flou_gaussien": {
-        "faible": {"kernel": 3, "sigma": 1.0},
-        "moyen": {"kernel": 7, "sigma": 2.5},
-        "fort": {"kernel": 13, "sigma": 5.0},
-    },
-    "bruit_aleatoire": {
-        "faible": {"type": "gaussian", "std": 8},
-        "moyen": {"type": "gaussian", "std": 20},
-        "fort": {"type": "gaussian", "std": 40},
-    },
-    "rotation_legere": {
-        "faible": {"angle_max": 2},
-        "moyen": {"angle_max": 5},
-        "fort": {"angle_max": 10},
-    },
-    "faible_contraste": {
-        "faible": {"alpha": 0.85, "beta": 10},
-        "moyen": {"alpha": 0.65, "beta": 20},
-        "fort": {"alpha": 0.45, "beta": 30},
-    },
-    "compression_jpeg": {
-        "faible": {"quality": 50},
-        "moyen": {"quality": 25},
-        "fort": {"quality": 10},
-    },
-    "effet_scan_degrade": {
-        "faible": {"threshold_noise": 10, "blur": 1},
-        "moyen": {"threshold_noise": 25, "blur": 2},
-        "fort": {"threshold_noise": 45, "blur": 3},
-    },
-    "distorsion_decalage": {
-        "faible": {"shift_px": 3, "shear": 0.01},
-        "moyen": {"shift_px": 8, "shear": 0.03},
-        "fort": {"shift_px": 15, "shear": 0.06},
-    },
-    "ombres": {
-        "faible": {"n_shadows": 1, "opacity": 0.15},
-        "moyen": {"n_shadows": 2, "opacity": 0.30},
-        "fort": {"n_shadows": 3, "opacity": 0.50},
-    },
+LEVELS = {
+    "faible": 0.33,
+    "moyen": 0.66,
+    "fort": 1.0,
 }
 
 
-# ---------------------------------------------------------------------------
-# 1. Flou gaussien
-# ---------------------------------------------------------------------------
-
-def flou_gaussien(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["flou_gaussien"][level])
-    out = img.filter(ImageFilter.GaussianBlur(radius=params["sigma"]))
-    return out, {"type": "flou_gaussien", "level": level, **params}
+def gaussian_blur(img, level):
+    k = max(1, int(round(2 + 6 * level)))
+    if k % 2 == 0:
+        k += 1
+    return cv2.GaussianBlur(img, (k, k), 0)
 
 
-# ---------------------------------------------------------------------------
-# 2. Bruit aléatoire
-# ---------------------------------------------------------------------------
-
-def bruit_aleatoire(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["bruit_aleatoire"][level])
-    arr = np.array(img.convert("RGB")).astype(np.float32)
-    noise = np.random.normal(0, params["std"], arr.shape).astype(np.float32)
-    noisy = np.clip(arr + noise, 0, 255).astype(np.uint8)
-    return Image.fromarray(noisy), {"type": "bruit_aleatoire", "level": level, **params}
+def random_noise(img, level):
+    sigma = 8 + 40 * level
+    noise = np.random.normal(0, sigma, img.shape).astype(np.float32)
+    out = img.astype(np.float32) + noise
+    return np.clip(out, 0, 255).astype(np.uint8)
 
 
-# ---------------------------------------------------------------------------
-# 3. Rotation légère
-# ---------------------------------------------------------------------------
-
-def rotation_legere(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["rotation_legere"][level])
-    angle = random.uniform(-params["angle_max"], params["angle_max"])
-    out = img.rotate(angle, resample=Image.BICUBIC, expand=False, fillcolor=(255, 255, 255))
-    return out, {"type": "rotation_legere", "level": level, "angle_applique": round(angle, 3), **params}
+def rotate_slight(img, level):
+    angle = random.uniform(-1, 1) * (1 + 6 * level)
+    h, w = img.shape[:2]
+    M = cv2.getRotationMatrix2D((w / 2, h / 2), angle, 1.0)
+    return cv2.warpAffine(img, M, (w, h), borderValue=(255, 255, 255)), angle
 
 
-# ---------------------------------------------------------------------------
-# 4. Faible contraste
-# ---------------------------------------------------------------------------
-
-def faible_contraste(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["faible_contraste"][level])
-    arr = pil_to_cv(img).astype(np.float32)
-    out = arr * params["alpha"] + params["beta"]
-    out = np.clip(out, 0, 255).astype(np.uint8)
-    return cv_to_pil(out), {"type": "faible_contraste", "level": level, **params}
+def low_contrast(img, level):
+    alpha = 1.0 - 0.6 * level  # réduit le contraste
+    beta = 40 * level  # éclaircit / grise l'image
+    return cv2.convertScaleAbs(img, alpha=alpha, beta=beta)
 
 
-# ---------------------------------------------------------------------------
-# 5. Compression JPEG (artefacts de compression forte)
-# ---------------------------------------------------------------------------
-
-def compression_jpeg(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["compression_jpeg"][level])
-    buffer = io.BytesIO()
-    img.convert("RGB").save(buffer, format="JPEG", quality=params["quality"])
-    buffer.seek(0)
-    out = Image.open(buffer).convert("RGB")
-    return out, {"type": "compression_jpeg", "level": level, **params}
+def jpeg_compression(img, level):
+    quality = int(round(80 - 65 * level))
+    quality = max(quality, 5)
+    ok, enc = cv2.imencode(".jpg", img, [int(cv2.IMWRITE_JPEG_QUALITY), quality])
+    dec = cv2.imdecode(enc, cv2.IMREAD_COLOR)
+    return dec, quality
 
 
-# ---------------------------------------------------------------------------
-# 6. Effet "scan dégradé" (grain + légers artefacts de seuillage)
-# ---------------------------------------------------------------------------
-
-def effet_scan_degrade(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["effet_scan_degrade"][level])
-    arr = pil_to_cv(img)
-    gray = cv2.cvtColor(arr, cv2.COLOR_BGR2GRAY)
-
-    speckle = np.random.randint(0, params["threshold_noise"], gray.shape, dtype=np.uint8)
-    gray_noisy = cv2.subtract(gray, speckle // 2)
-    gray_noisy = cv2.add(gray_noisy, speckle // 2)
-
-    if params["blur"] > 0:
-        k = params["blur"] * 2 + 1
-        gray_noisy = cv2.GaussianBlur(gray_noisy, (k, k), 0)
-
-    out = cv2.cvtColor(gray_noisy, cv2.COLOR_GRAY2BGR)
-    return cv_to_pil(out), {"type": "effet_scan_degrade", "level": level, **params}
+def scan_effect(img, level):
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    noisy = random_noise(cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR), level * 0.5)
+    contrast = low_contrast(noisy, level * 0.6)
+    return contrast
 
 
-# ---------------------------------------------------------------------------
-# 7. Distorsion / décalage géométrique léger
-# ---------------------------------------------------------------------------
+def shift_distortion(img, level):
+    h, w = img.shape[:2]
+    dx = int(round(random.uniform(-3, 3) * (1 + 4 * level)))
+    dy = int(round(random.uniform(-3, 3) * (1 + 4 * level)))
+    M = np.float32([[1, 0, dx], [0, 1, dy]])
+    return cv2.warpAffine(img, M, (w, h), borderValue=(255, 255, 255)), (dx, dy)
 
-def distorsion_decalage(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["distorsion_decalage"][level])
-    arr = pil_to_cv(img)
-    h, w = arr.shape[:2]
 
-    shift_x = random.uniform(-params["shift_px"], params["shift_px"])
-    shift_y = random.uniform(-params["shift_px"], params["shift_px"])
-    shear = random.uniform(-params["shear"], params["shear"])
+def shadow(img, level):
+    h, w = img.shape[:2]
+    overlay = img.copy()
+    x0 = random.randint(0, w // 2)
+    y0 = random.randint(0, h // 2)
+    x1 = x0 + random.randint(w // 4, w // 2)
+    y1 = y0 + random.randint(h // 4, h // 2)
+    cv2.rectangle(overlay, (x0, y0), (x1, y1), (0, 0, 0), -1)
+    alpha = 0.15 + 0.35 * level
+    return cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0)
 
-    M = np.array([[1, shear, shift_x],
-                  [shear, 1, shift_y]], dtype=np.float32)
-    out = cv2.warpAffine(arr, M, (w, h), borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255))
-    return cv_to_pil(out), {
-        "type": "distorsion_decalage", "level": level,
-        "shift_x": round(shift_x, 2), "shift_y": round(shift_y, 2), "shear": round(shear, 4),
+
+DEGRADATIONS = {
+    "blur": gaussian_blur,
+    "noise": random_noise,
+    "rotation": rotate_slight,
+    "low_contrast": low_contrast,
+    "jpeg": jpeg_compression,
+    "scan_effect": scan_effect,
+    "shift": shift_distortion,
+    "shadow": shadow,
+}
+
+
+def apply_degradation(image_path, degradation_name, level_name="moyen"):
+    """Applique une dégradation nommée à un niveau donné (faible/moyen/fort)."""
+    assert degradation_name in DEGRADATIONS, f"dégradation inconnue: {degradation_name}"
+    assert level_name in LEVELS, f"niveau inconnu: {level_name}"
+
+    img = cv2.imread(str(image_path))
+    level = LEVELS[level_name]
+    fn = DEGRADATIONS[degradation_name]
+    result = fn(img, level)
+
+    params = {}
+    if isinstance(result, tuple):
+        out_img, extra = result
+        params["extra"] = extra
+    else:
+        out_img = result
+
+    return out_img, {
+        "degradation": degradation_name,
+        "level_name": level_name,
+        "level_value": level,
         **params,
     }
 
 
-# ---------------------------------------------------------------------------
-# 8. Ombres / zones assombries
-# ---------------------------------------------------------------------------
-
-def ombres(img: Image.Image, level: str = "moyen", seed: int | None = None) -> Tuple[Image.Image, dict]:
-    _set_seed(seed)
-    params = dict(PARAM_GRID["ombres"][level])
-    out = img.convert("RGB").copy()
-    w, h = out.size
-    overlay = Image.new("RGBA", out.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(overlay)
-
-    shadow_boxes = []
-    for _ in range(params["n_shadows"]):
-        x0 = random.randint(0, w // 2)
-        y0 = random.randint(0, h // 2)
-        x1 = x0 + random.randint(w // 4, w // 2)
-        y1 = y0 + random.randint(h // 4, h // 2)
-        alpha = int(255 * params["opacity"])
-        draw.ellipse([x0, y0, x1, y1], fill=(0, 0, 0, alpha))
-        shadow_boxes.append([x0, y0, x1, y1])
-
-    overlay = overlay.filter(ImageFilter.GaussianBlur(radius=25))
-    out = Image.alpha_composite(out.convert("RGBA"), overlay).convert("RGB")
-    return out, {"type": "ombres", "level": level, "zones": shadow_boxes, **params}
-
-
-# ---------------------------------------------------------------------------
-# Registre des dégradations
-# ---------------------------------------------------------------------------
-
-DEGRADATIONS: Dict[str, Callable] = {
-    "flou_gaussien": flou_gaussien,
-    "bruit_aleatoire": bruit_aleatoire,
-    "rotation_legere": rotation_legere,
-    "faible_contraste": faible_contraste,
-    "compression_jpeg": compression_jpeg,
-    "effet_scan_degrade": effet_scan_degrade,
-    "distorsion_decalage": distorsion_decalage,
-    "ombres": ombres,
-}
-
-
-def apply_degradation(img: Image.Image, degradation_type: str, level: str = "moyen",
-                       seed: int | None = None) -> Tuple[Image.Image, dict]:
-    """Applique UNE dégradation nommée à une image, à un niveau donné."""
-    if degradation_type not in DEGRADATIONS:
-        raise ValueError(f"Dégradation inconnue : {degradation_type}. "
-                          f"Choix possibles : {list(DEGRADATIONS.keys())}")
-    if level not in LEVELS:
-        raise ValueError(f"Niveau inconnu : {level}. Choix possibles : {LEVELS}")
-    return DEGRADATIONS[degradation_type](img, level=level, seed=seed)
-
-
-# ---------------------------------------------------------------------------
-# Génération du benchmark complet sur un dataset (ex : FUNSD)
-# ---------------------------------------------------------------------------
-
-def generate_degraded_dataset(
-    manifest_path: Path,
-    raw_images_dir: Path,
-    output_dir: Path,
-    degradations: List[str] | None = None,
-    levels: List[str] | None = None,
-    seed: int = 42,
-) -> Path:
+def build_degraded_dataset(raw_dir="data/raw", out_dir="data/degraded",
+                            degradations=None, levels=("faible", "moyen", "fort")):
     """
-    Applique toutes les dégradations x tous les niveaux à tous les documents
-    listés dans `manifest_path`, sauvegarde les images dégradées dans
-    `output_dir/images/` et écrit un manifest JSON récapitulatif.
-
-    Nom de fichier de sortie :
-        <nom_original_sans_ext>__<degradation>__<level>.png
-
-    Retourne le chemin du manifest JSON généré.
+    Génère, pour chaque image brute et chaque (dégradation, niveau),
+    une version dégradée + sauvegarde les paramètres appliqués.
     """
+    raw_dir = Path(raw_dir)
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
     degradations = degradations or list(DEGRADATIONS.keys())
-    levels = levels or LEVELS
+    manifest_path = raw_dir / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 
-    manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
-    output_dir = Path(output_dir)
-    images_out = output_dir / "images"
-    images_out.mkdir(parents=True, exist_ok=True)
-
-    records = []
-    total = len(manifest) * len(degradations) * len(levels)
-    done = 0
-
+    log = []
     for entry in manifest:
-        img_name = entry["image"]
-        img_path = Path(raw_images_dir) / img_name
-        base_img = Image.open(img_path).convert("RGB")
-        stem = Path(img_name).stem
+        img_path = raw_dir / "images" / entry["image"]
+        stem = Path(entry["image"]).stem
 
         for deg_name in degradations:
-            for level in levels:
-                # seed dérivée pour reproductibilité par (doc, deg, level)
-                local_seed = seed + hash((stem, deg_name, level)) % 10_000
-                degraded_img, params = apply_degradation(base_img, deg_name, level, seed=local_seed)
-
-                out_filename = f"{stem}__{deg_name}__{level}.png"
-                degraded_img.save(images_out / out_filename)
-
-                records.append({
-                    "document_original": img_name,
-                    "annotation_originale": entry.get("annotation"),
-                    "image_degradee": out_filename,
-                    "degradation": deg_name,
-                    "level": level,
-                    "seed": local_seed,
-                    "params": params,
+            for level_name in levels:
+                out_img, meta = apply_degradation(img_path, deg_name, level_name)
+                out_name = f"{stem}__{deg_name}__{level_name}.png"
+                cv2.imwrite(str(out_dir / out_name), out_img)
+                meta.update({
+                    "source_image": entry["image"],
+                    "annotation": entry["annotation"],
+                    "output_image": out_name,
                 })
-                done += 1
+                log.append(meta)
 
-    manifest_out_path = output_dir / "manifest_degraded.json"
-    manifest_out_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
+    with open(out_dir / "degradation_log.json", "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
 
-    print(f"[OK] {done}/{total} images dégradées générées dans {images_out}")
-    print(f"[OK] Manifest écrit : {manifest_out_path}")
-    return manifest_out_path
+    print(f"[OK] {len(log)} images dégradées générées dans {out_dir}")
+    return log
 
 
 if __name__ == "__main__":
-    # Petit test manuel : python src/degradation.py
-    # (nécessite data/raw/manifest.json + data/raw/images/ générés en Phase 1)
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Génère le benchmark de documents dégradés (Phase 2).")
-    parser.add_argument("--manifest", type=str, default="data/raw/manifest.json")
-    parser.add_argument("--images_dir", type=str, default="data/raw/images")
-    parser.add_argument("--output_dir", type=str, default="data/degraded")
-    parser.add_argument("--seed", type=int, default=42)
-    args = parser.parse_args()
-
-    generate_degraded_dataset(
-        manifest_path=Path(args.manifest),
-        raw_images_dir=Path(args.images_dir),
-        output_dir=Path(args.output_dir),
-        seed=args.seed,
-    )
+    build_degraded_dataset()
