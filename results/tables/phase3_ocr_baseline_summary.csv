@@ -1,0 +1,26 @@
+degradation,level_name,CER,WER
+aucune (original),-,0.5906833333333333,0.7804083333333335
+blur,faible,0.59485,0.77805
+blur,fort,0.9331,1.0
+blur,moyen,0.8311999999999999,0.9620500000000001
+jpeg,faible,0.42315,0.6711499999999999
+jpeg,fort,0.44055,0.72415
+jpeg,moyen,0.44955,0.7073
+low_contrast,faible,0.41759999999999997,0.66425
+low_contrast,fort,0.42145,0.6651
+low_contrast,moyen,0.41900000000000004,0.6664
+noise,faible,0.44100000000000006,0.6845
+noise,fort,1.0,1.0
+noise,moyen,0.40890000000000004,0.6513
+rotation,faible,0.4567,0.6974
+rotation,fort,0.4586,0.7293000000000001
+rotation,moyen,0.58215,0.8120499999999999
+scan_effect,faible,0.43005000000000004,0.6569
+scan_effect,fort,0.1891,0.4552
+scan_effect,moyen,0.1902,0.4759
+shadow,faible,0.1933,0.4828
+shadow,fort,0.6886,0.8483
+shadow,moyen,0.6458,0.8552
+shift,faible,0.1944,0.4828
+shift,fort,0.1891,0.4621
+shift,moyen,0.1891,0.4621

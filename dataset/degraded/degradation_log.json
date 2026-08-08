@@ -1,0 +1,2522 @@
+[
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 0.8309837188089871,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": -4.711893308191144,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -3.1495895428323304,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -4,
+      3
+    ],
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      4,
+      9
+    ],
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -12,
+      -2
+    ],
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000971160.png",
+    "annotation": "0000971160.json",
+    "output_image": "0000971160__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 0.2678512243951714,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": -2.7732290293562887,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 1.249719574262722,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      4,
+      -7
+    ],
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      7,
+      4
+    ],
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -5,
+      -10
+    ],
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000989556.png",
+    "annotation": "0000989556.json",
+    "output_image": "0000989556__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": -0.2418277171558185,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": -3.7217244644961633,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 5.912135208394239,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -6,
+      -3
+    ],
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      3,
+      8
+    ],
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -4,
+      -9
+    ],
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000990274.png",
+    "annotation": "0000990274.json",
+    "output_image": "0000990274__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 0.8086792878158251,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": -1.3408647846167643,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -1.817466460363643,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -4,
+      -3
+    ],
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      10,
+      3
+    ],
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      3,
+      -10
+    ],
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0000999294.png",
+    "annotation": "0000999294.json",
+    "output_image": "0000999294__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 2.0433974443312652,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 2.7379191225387487,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -3.793326992502539,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -7,
+      -3
+    ],
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      -5,
+      -6
+    ],
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      13,
+      11
+    ],
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001118259.png",
+    "annotation": "0001118259.json",
+    "output_image": "0001118259__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 1.4601343332659753,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 0.3866547134995209,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 3.4581933631316106,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -1,
+      1
+    ],
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      -3,
+      11
+    ],
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -11,
+      0
+    ],
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001123541.png",
+    "annotation": "0001123541.json",
+    "output_image": "0001123541__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 0.5714950330323234,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": -0.31694511317600155,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -3.4802023202546155,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      1,
+      6
+    ],
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      4,
+      -8
+    ],
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      12,
+      8
+    ],
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001129658.png",
+    "annotation": "0001129658.json",
+    "output_image": "0001129658__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 2.812453069265881,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 2.5986650145964814,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 0.1075434444605532,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -5,
+      2
+    ],
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      7,
+      0
+    ],
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -9,
+      -4
+    ],
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001209043.png",
+    "annotation": "0001209043.json",
+    "output_image": "0001209043__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 2.8925154185051207,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 3.0432060635875167,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -3.6476676552671767,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -4,
+      1
+    ],
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      -9,
+      5
+    ],
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      9,
+      14
+    ],
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001239897.png",
+    "annotation": "0001239897.json",
+    "output_image": "0001239897__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 2.767602919804433,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 4.254821850581594,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 3.573712752901277,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      3,
+      3
+    ],
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      -2,
+      4
+    ],
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -4,
+      12
+    ],
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001438955.png",
+    "annotation": "0001438955.json",
+    "output_image": "0001438955__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": -2.9371425996488423,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 2.0617821897606645,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -6.175767263731473,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -6,
+      -7
+    ],
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      -4,
+      0
+    ],
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      -7,
+      0
+    ],
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001456787.png",
+    "annotation": "0001456787.json",
+    "output_image": "0001456787__shadow__fort.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__blur__faible.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__blur__moyen.png"
+  },
+  {
+    "degradation": "blur",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__blur__fort.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__noise__faible.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__noise__moyen.png"
+  },
+  {
+    "degradation": "noise",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__noise__fort.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": -2.417818252908382,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__rotation__faible.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 1.5771088751854576,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__rotation__moyen.png"
+  },
+  {
+    "degradation": "rotation",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": -2.0398340677462468,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__rotation__fort.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__low_contrast__faible.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__low_contrast__moyen.png"
+  },
+  {
+    "degradation": "low_contrast",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__low_contrast__fort.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": 59,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__jpeg__faible.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": 37,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__jpeg__moyen.png"
+  },
+  {
+    "degradation": "jpeg",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": 15,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__jpeg__fort.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__scan_effect__faible.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__scan_effect__moyen.png"
+  },
+  {
+    "degradation": "scan_effect",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__scan_effect__fort.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "extra": [
+      -1,
+      5
+    ],
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__shift__faible.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "extra": [
+      -10,
+      3
+    ],
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__shift__moyen.png"
+  },
+  {
+    "degradation": "shift",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "extra": [
+      4,
+      -13
+    ],
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__shift__fort.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "faible",
+    "level_value": 0.33,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__shadow__faible.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "moyen",
+    "level_value": 0.66,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__shadow__moyen.png"
+  },
+  {
+    "degradation": "shadow",
+    "level_name": "fort",
+    "level_value": 1.0,
+    "source_image": "0001463282.png",
+    "annotation": "0001463282.json",
+    "output_image": "0001463282__shadow__fort.png"
+  }
+]
