@@ -1,0 +1,56 @@
+{
+  "document": "0000971160.png",
+  "paires_extraites": [
+    {
+      "label": "Ext.:",
+      "valeur": "M. Hamann, P, Harper,",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Date:",
+      "valeur": "__9/3/92",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Supervisor/Manager:",
+      "valeur": "J. S. Wigand RED",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Group:",
+      "valeur": "_Licensee",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Suggestion:",
+      "valeur": "Discontinue coal retention analyses",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "(Note:",
+      "valeur": "Coal Retention testing is",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Solution(s):",
+      "valeur": "Delete coal retention from",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Manager",
+      "valeur": "Connents: Manager, please contact",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Connents:",
+      "valeur": "Manager, please contact suggester",
+      "methode": "meme_ligne"
+    },
+    {
+      "label": "Manager,",
+      "valeur": "please contact suggester and",
+      "methode": "meme_ligne"
+    }
+  ],
+  "methode": "ocr_layout_spatial"
+}
