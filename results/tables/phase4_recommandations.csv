@@ -1,0 +1,9 @@
+degradation,Pretraitement recommande,Gain de CER (points)
+ombres,binarisation_seule,0.076
+rotation_legere,deskew_seul,0.057
+flou_gaussien,binarisation_seule,0.049
+bruit_aleatoire,denoise_seul,0.034
+distorsion_decalage,contraste_seul,0.02
+effet_scan_degrade,binarisation_seule,0.013
+compression_jpeg,deskew_seul,0.001
+faible_contraste,denoise_seul,-0.016
