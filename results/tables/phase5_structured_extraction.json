@@ -1,0 +1,201 @@
+{
+  "0000971160.png": {
+    "DATE": {
+      "ground_truth": "9/ 3/ 92",
+      "predicted_rules": null,
+      "predicted_layout": "__9/3/92"
+    },
+    "FROM": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "the list submitted of"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "as ends are stability"
+    }
+  },
+  "0000989556.png": {
+    "APPROVED_BY": {
+      "ground_truth": "Director of Technical Operations, Brown & Williamson International Tobacco",
+      "predicted_rules": "Dicector of Technical operations",
+      "predicted_layout": "by: Dicector of Technical"
+    },
+    "DATE": {
+      "ground_truth": "May 1, 1985",
+      "predicted_rules": null,
+      "predicted_layout": null
+    },
+    "FROM": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "mouth ene"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "Cigt. we. 978, ng"
+    }
+  },
+  "0000990274.png": {
+    "DATE": {
+      "ground_truth": "March 27, 1984",
+      "predicted_rules": null,
+      "predicted_layout": "NO.: 8} March 25-84"
+    },
+    "FROM": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "Rep BY"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "be cent to RED"
+    }
+  },
+  "0000999294.png": {
+    "SUBJECT": {
+      "ground_truth": "KOOL Lights KS vs. Bright KS Product Monitor",
+      "predicted_rules": null,
+      "predicted_layout": null
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "PRODUCT TEST PROJECT PAGE"
+    }
+  },
+  "0001118259.png": {
+    "DATE": {
+      "ground_truth": null,
+      "predicted_rules": "05/11/95",
+      "predicted_layout": "05/11/95 Formulas"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "Leaf Substitutions"
+    }
+  },
+  "0001123541.png": {
+    "DATE": {
+      "ground_truth": "6/ 21/ 93",
+      "predicted_rules": null,
+      "predicted_layout": null
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "cleaning understand"
+    }
+  },
+  "0001129658.png": {
+    "CC": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "sity it othe prohibited"
+    },
+    "DATE": {
+      "ground_truth": "10/ 13/ 99",
+      "predicted_rules": null,
+      "predicted_layout": null
+    },
+    "FROM": {
+      "ground_truth": "Kevin Narko",
+      "predicted_rules": "Kevin Narko CHARGEBACK",
+      "predicted_layout": "Kevin Narko Fax Number:"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "number of pages including"
+    }
+  },
+  "0001209043.png": {
+    "DATE": {
+      "ground_truth": "4/19/74",
+      "predicted_rules": null,
+      "predicted_layout": "Sent 4/19/74"
+    },
+    "SUBJECT": {
+      "ground_truth": null,
+      "predicted_rules": "to wide",
+      "predicted_layout": "to of wide small"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "Sample 214"
+    }
+  },
+  "0001239897.png": {
+    "SUBJECT": {
+      "ground_truth": "25% Replacement of Propylene Glycol With SORBITOL",
+      "predicted_rules": null,
+      "predicted_layout": null
+    }
+  },
+  "0001438955.png": {},
+  "0001456787.png": {
+    "CC": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "s/t"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "Pramure Drop (unencap.)"
+    }
+  },
+  "0001463282.png": {
+    "APPROVED_BY": {
+      "ground_truth": null,
+      "predicted_rules": "Date J",
+      "predicted_layout": "By: BW, LE, Byeney"
+    },
+    "CC": {
+      "ground_truth": "K. A. Hutchison S. A. Howard",
+      "predicted_rules": "S. Willinger",
+      "predicted_layout": "S. Willinger (3) Project"
+    },
+    "DATE": {
+      "ground_truth": "5/ 3/ 90",
+      "predicted_rules": null,
+      "predicted_layout": "_4/16/90 (Recomended Proposal Attached)"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "al_cost 23.3 Cost ___s84.2__"
+    }
+  },
+  "0001463448.png": {
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "THE"
+    }
+  },
+  "0001476912.png": {
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "CORPORATION"
+    }
+  },
+  "0001477983.png": {
+    "DATE": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "place, persons and receiving"
+    },
+    "TO": {
+      "ground_truth": null,
+      "predicted_rules": null,
+      "predicted_layout": "report the Providence, previous"
+    }
+  }
+}

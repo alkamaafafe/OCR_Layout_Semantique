@@ -1,0 +1,3 @@
+methode,exact_match,partial_match,incorrect,missing,precision,recall,f1
+Règles + OCR,0,1,2,9,0.167,0.05,0.077
+OCR + layout,0,2,5,5,0.143,0.143,0.143

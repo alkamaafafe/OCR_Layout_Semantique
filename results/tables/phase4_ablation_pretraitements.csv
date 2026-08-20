@@ -1,6 +1,6 @@
 step,CER
-resize,0.397325
-denoise,0.4502125
-deskew,0.5084625
-binarize,0.5387875
-contrast,0.7079375
+resize,0.408975
+denoise,0.47152499999999997
+deskew,0.5133
+binarize,0.513325
+contrast,0.6989125

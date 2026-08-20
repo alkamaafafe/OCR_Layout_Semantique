@@ -1,0 +1,342 @@
+[
+  {
+    "document":"0000971160.png",
+    "field":"DATE",
+    "ground_truth":"9\/ 3\/ 92",
+    "predicted":"__9\/3\/92",
+    "confidence":0.793,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"incorrect"
+  },
+  {
+    "document":"0000971160.png",
+    "field":"FROM",
+    "ground_truth":null,
+    "predicted":"the list submitted of",
+    "confidence":0.893,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0000971160.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"as ends are stability",
+    "confidence":0.909,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0000989556.png",
+    "field":"APPROVED_BY",
+    "ground_truth":"Director of Technical Operations, Brown & Williamson International Tobacco",
+    "predicted":"by: Dicector of Technical",
+    "confidence":0.803,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"incorrect"
+  },
+  {
+    "document":"0000989556.png",
+    "field":"DATE",
+    "ground_truth":"May 1, 1985",
+    "predicted":null,
+    "confidence":0.285,
+    "is_reliable":false,
+    "format_ok":false,
+    "status":"missing"
+  },
+  {
+    "document":"0000989556.png",
+    "field":"FROM",
+    "ground_truth":null,
+    "predicted":"mouth ene",
+    "confidence":0.854,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0000989556.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"Cigt. we. 978, ng",
+    "confidence":0.83,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0000990274.png",
+    "field":"DATE",
+    "ground_truth":"March 27, 1984",
+    "predicted":"NO.: 8} March 25-84",
+    "confidence":0.421,
+    "is_reliable":false,
+    "format_ok":false,
+    "status":"incorrect"
+  },
+  {
+    "document":"0000990274.png",
+    "field":"FROM",
+    "ground_truth":null,
+    "predicted":"Rep BY",
+    "confidence":0.85,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0000990274.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"be cent to RED",
+    "confidence":0.858,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0000999294.png",
+    "field":"SUBJECT",
+    "ground_truth":"KOOL Lights KS vs. Bright KS Product Monitor",
+    "predicted":null,
+    "confidence":0.285,
+    "is_reliable":false,
+    "format_ok":false,
+    "status":"missing"
+  },
+  {
+    "document":"0000999294.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"PRODUCT TEST PROJECT PAGE",
+    "confidence":0.895,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001118259.png",
+    "field":"DATE",
+    "ground_truth":null,
+    "predicted":"05\/11\/95 Formulas",
+    "confidence":0.881,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001118259.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"Leaf Substitutions",
+    "confidence":0.913,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001123541.png",
+    "field":"DATE",
+    "ground_truth":"6\/ 21\/ 93",
+    "predicted":null,
+    "confidence":0.285,
+    "is_reliable":false,
+    "format_ok":false,
+    "status":"missing"
+  },
+  {
+    "document":"0001123541.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"cleaning understand",
+    "confidence":0.892,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001129658.png",
+    "field":"CC",
+    "ground_truth":null,
+    "predicted":"sity it othe prohibited",
+    "confidence":0.744,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001129658.png",
+    "field":"DATE",
+    "ground_truth":"10\/ 13\/ 99",
+    "predicted":null,
+    "confidence":0.285,
+    "is_reliable":false,
+    "format_ok":false,
+    "status":"missing"
+  },
+  {
+    "document":"0001129658.png",
+    "field":"FROM",
+    "ground_truth":"Kevin Narko",
+    "predicted":"Kevin Narko Fax Number:",
+    "confidence":0.898,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"partial_match"
+  },
+  {
+    "document":"0001129658.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"number of pages including",
+    "confidence":0.912,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001209043.png",
+    "field":"DATE",
+    "ground_truth":"4\/19\/74",
+    "predicted":"Sent 4\/19\/74",
+    "confidence":0.91,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"partial_match"
+  },
+  {
+    "document":"0001209043.png",
+    "field":"SUBJECT",
+    "ground_truth":null,
+    "predicted":"to of wide small",
+    "confidence":0.911,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001209043.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"Sample 214",
+    "confidence":0.913,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001239897.png",
+    "field":"SUBJECT",
+    "ground_truth":"25% Replacement of Propylene Glycol With SORBITOL",
+    "predicted":null,
+    "confidence":0.285,
+    "is_reliable":false,
+    "format_ok":false,
+    "status":"missing"
+  },
+  {
+    "document":"0001456787.png",
+    "field":"CC",
+    "ground_truth":null,
+    "predicted":"s\/t",
+    "confidence":0.838,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001456787.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"Pramure Drop (unencap.)",
+    "confidence":0.824,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001463282.png",
+    "field":"APPROVED_BY",
+    "ground_truth":null,
+    "predicted":"By: BW, LE, Byeney",
+    "confidence":0.71,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001463282.png",
+    "field":"CC",
+    "ground_truth":"K. A. Hutchison S. A. Howard",
+    "predicted":"S. Willinger (3) Project",
+    "confidence":0.848,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"incorrect"
+  },
+  {
+    "document":"0001463282.png",
+    "field":"DATE",
+    "ground_truth":"5\/ 3\/ 90",
+    "predicted":"_4\/16\/90 (Recomended Proposal Attached)",
+    "confidence":0.843,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"incorrect"
+  },
+  {
+    "document":"0001463282.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"al_cost 23.3 Cost ___s84.2__",
+    "confidence":0.756,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001463448.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"THE",
+    "confidence":0.91,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001476912.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"CORPORATION",
+    "confidence":0.913,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001477983.png",
+    "field":"DATE",
+    "ground_truth":null,
+    "predicted":"place, persons and receiving",
+    "confidence":0.561,
+    "is_reliable":true,
+    "format_ok":false,
+    "status":"hors_perimetre"
+  },
+  {
+    "document":"0001477983.png",
+    "field":"TO",
+    "ground_truth":null,
+    "predicted":"report the Providence, previous",
+    "confidence":0.81,
+    "is_reliable":true,
+    "format_ok":true,
+    "status":"hors_perimetre"
+  }
+]
